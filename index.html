@@ -1,0 +1,88 @@
+
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo de Posicionamiento</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #dcdcdc;
+      margin: 0;
+      padding: 20px;
+      height: 2000px; 
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .contenedor {
+      position: relative;
+      width: 80%;
+      height: 600px;
+      background-color: #bfbfbf;
+      margin: 50px auto;
+      border: 2px solid #999;
+      overflow: auto;
+      padding: 20px;
+    }
+
+    .caja {
+      width: 120px;
+      height: 100px;
+      color: white;
+      text-align: center;
+      line-height: 100px;
+      font-weight: bold;
+      border-radius: 10px;
+    }
+
+    .static {
+      background-color: #0077b6;
+      position: static;
+    }
+
+    .relative {
+      background-color: #0096c7;
+      position: relative;
+      top: 20px;
+      left: 30px;
+    }
+
+    .absolute {
+      background-color: #ef233c;
+      position: absolute;
+      top: 50px;
+      right: 40px;
+    }
+
+    .fixed {
+      background-color: #ffd60a;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+    }
+
+    .sticky {
+      background-color: #2a9d8f;
+      position: sticky;
+      top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Ejemplo de Posicionamiento</h1>
+
+  <div class="contenedor">
+    <div class="caja static">Static</div>
+    <div class="caja relative">Relative</div>
+    <div class="caja absolute">Absolute</div>
+    <div class="caja sticky">Sticky</div>
+  </div>
+
+  <div class="caja fixed">Fixed</div>
+
+  <p style="text-align:center; margin-top:1000px;">Desplazate para ver el efecto del elemento fijo (Fixed) y el sticky.</p>
+</body>
+</html>
